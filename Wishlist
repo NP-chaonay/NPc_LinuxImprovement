@@ -1,0 +1,19 @@
+# this contains wishlist for project
+[Keys]
+(+): group
+(-): entry
+(#): remark
+
++ UI
+	+ GUI
+		- User session in 1 tty (reduce use of tty, with helps of Wayland compositor, I means each sessions has its compositor and these must nested under main compositor which is created by display manager and used as login screen, so this implementation makes display manager become more better display manager, and this also making way for user switching animation, better UX, and improve security (since you cannot just use chvt to change user, you have to send API to display manager.)
+			# Disadvantage (for nowaday Wayland and my system as I observed): crashing of main compositor may result in all session crashed, but I think most Wayland compositor crash comes from User session (maybe mostly by GNOME-shell cause it not just compositor but also JS shell)
+				# so we have to ensure of main compositor stability, or making reconnect between nested compositor and main compositor available
++ Sound
+	+ Audio Enhancment
+		# maybe EasyEffects done this well (?, I have not try that, only PulseEffects which have high latency, on low lentency settings may cause audio cracking)
++ Localization
+	# This project only supports Thai localization and some global stuff of localization
+	+ Thai language
+		+ Manual
++ Manual Improvement
