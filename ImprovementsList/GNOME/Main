@@ -1,0 +1,2 @@
+[Power Management]
+- Ignore screen-off-prevention after user is locked even application still have requested for it.
